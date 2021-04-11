@@ -22,6 +22,6 @@
         <!--后缀-->
         <property name="suffix" value=".jsp"/>
     </bean>
-    <!--Handler:处理的controller-->
+    <!--Handler:处理的controller,BeanNameUrlHandlerMapping:bean-->
     <bean id="/hello" class="com.zdk.controller.HelloController"/>
 </beans>
