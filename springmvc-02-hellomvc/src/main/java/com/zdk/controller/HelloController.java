@@ -11,18 +11,17 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2021/4/10 21:14
  */
 public class HelloController implements Controller {
-
     @Override
-    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        //ModelAndView 模型和视图
-        ModelAndView mv = new ModelAndView();
+    public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
+        ModelAndView modelAndView = new ModelAndView();
 
-        //封装对象，放在ModelAndView中。Model
-        mv.addObject("msg","HelloSpringMVC!");
-        //封装要跳转的视图，放在ModelAndView中
-        //: /WEB-INF/jsp/hello.jsp
-        mv.setViewName("hello");
-        return mv;
+        //业务代码
+        String result="Hello World!";
+        modelAndView.addObject("msg", result);
+
+        //视图跳转
+        modelAndView.setViewName("test");
+
+        return modelAndView;
     }
-
 }
