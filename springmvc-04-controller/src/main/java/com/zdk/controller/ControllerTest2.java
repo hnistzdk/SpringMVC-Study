@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author zdk
+ * @author com.zdk
  * @date 2021/4/11 13:02
  */
 //@Controller注解的类代表这个类会被spring托管

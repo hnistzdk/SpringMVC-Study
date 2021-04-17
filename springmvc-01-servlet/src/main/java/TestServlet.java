@@ -1,5 +1,5 @@
 /**
- * @author zdk
+ * @author com.zdk
  * @date 2021/4/10 20:06
  */
 
@@ -11,7 +11,7 @@ public class TestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username= request.getParameter("username");
-        if(username.equals("zdk")){
+        if(username.equals("com.zdk")){
             request.getSession().setAttribute("msg", "张迪凯");
         }else {
             request.getSession().setAttribute("msg", "不是张迪凯");

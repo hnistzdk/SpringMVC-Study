@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author zdk
+ * @author com.zdk
  * @date 2021/4/11 11:36
  */
 //在类上加上@RequestMapping("/hello")后请求路径变为了localhost:8080/hello/h1

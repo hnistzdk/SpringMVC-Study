@@ -47,7 +47,7 @@ public class HelloController implements Controller {
         <property name="suffix" value=".jsp"/>
     </bean>
     <!--Handler:处理的controller,BeanNameUrlHandlerMapping:bean-->
-    <bean id="/hello" class="com.zdk.controller.HelloController"/>
+    <bean id="/hello" class="com.com.zdk.controller.HelloController"/>
 </beans>
 ```
 
@@ -115,7 +115,7 @@ ${msg}
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!--    自动扫描包，让指定包下的注解生效，由IOC容器统一管理-->
-    <context:component-scan base-package="com.zdk.controller"/>
+    <context:component-scan base-package="com.com.zdk.controller"/>
 
     <!--    让springMVC不处理静态资源 .css,.js,.jpg,.mp3等等静态资源-->
     <mvc:default-servlet-handler/>
