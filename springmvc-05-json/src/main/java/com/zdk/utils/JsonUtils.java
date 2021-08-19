@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
  */
 public class JsonUtils {
     public static String getJson(Object object) throws JsonProcessingException {
-        return getJson(object, "yyyy-MM-dd:HH:mm:ss");
+        return getJson(object, "yyyy-MM-dd");
     }
     public static String getJson(Object object,String sdf) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();

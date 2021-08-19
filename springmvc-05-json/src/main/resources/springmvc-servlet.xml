@@ -10,7 +10,7 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <context:component-scan base-package="com.com.zdk.controller"/>
+    <context:component-scan base-package="com.zdk.controller"/>
 <!--    过滤静态资源-->
     <mvc:default-servlet-handler/>
 
